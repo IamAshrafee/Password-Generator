@@ -1,0 +1,87 @@
+/* styles.css */
+
+/* General body styles */
+body {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* White text */
+  font-family: 'Arial', sans-serif; /* Font family */
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+}
+
+/* Container for the options box */
+.container {
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100%; /* Full height of the container */
+}
+
+/* Styles for the options box */
+.options-box {
+  background-color: #1e1e1e; /* Slightly lighter dark background */
+  border: 1px solid #000; /* Border around the options box */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the box */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  width: 300px; /* Fixed width */
+  position: relative; /* Relative position for internal elements */
+}
+
+/* Styles for the legend */
+.options-box legend {
+  padding: 0 10px; /* Padding for the legend */
+  font-size: 20px; /* Font size for the legend */
+  color: #ffffff; /* White text for the legend */
+  background-color: #1e1e1e; /* Match the background of the fieldset */
+  border-radius: 5px; /* Rounded corners for the legend */
+}
+
+/* Styles for each option */
+.option {
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space between label and toggle */
+  align-items: center; /* Center items vertically */
+  margin: 10px 0; /* Margin between options */
+}
+
+/* Styles for labels */
+.option label {
+  font-size: 16px; /* Font size for labels */
+}
+
+/* Styles for toggle switches */
+.toggle {
+  appearance: none; /* Remove default styles */
+  width: 40px; /* Width of the toggle */
+  height: 20px; /* Height of the toggle */
+  background-color: #555; /* Background color */
+  border-radius: 10px; /* Rounded corners */
+  position: relative; /* Position for the slider */
+  outline: none; /* Remove outline */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Styles for the slider */
+.toggle:checked {
+  background-color: #00bfff; /* Background color when checked */
+}
+
+.toggle:before {
+  content: ''; /* Empty content for the slider */
+  position: absolute; /* Positioning inside the toggle */
+  width: 18px; /* Width of the slider */
+  height: 18px; /* Height of the slider */
+  background-color: #fff; /* Color of the slider */
+  border-radius: 50%; /* Rounded slider */
+  top: 1px; /* Positioning from top */
+  left: 1px; /* Positioning from left */
+  transition: 0.3s; /* Smooth transition */
+}
+
+.toggle:checked:before {
+  transform: translateX(20px); /* Move the slider when checked */
+}

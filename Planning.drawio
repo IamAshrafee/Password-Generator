@@ -1,0 +1,46 @@
+<mxfile host="65bd71144e">
+    <diagram id="WcydfH9yQhJuX-YjwVGJ" name="Page-1">
+        <mxGraphModel dx="2066" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;connectable=0;" vertex="1" parent="1">
+                    <mxGeometry x="-200" y="20" width="1190" height="750" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Random Password Generator" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="207.5" y="70" width="375" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-150" y="140" width="290" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="235" y="180" width="320" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="265" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="330" y="265" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="470" y="265" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="660" y="140" width="290" height="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-150" y="210" width="290" height="470" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="350" width="400" height="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="660" y="490" width="290" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="660" y="600" width="290" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
