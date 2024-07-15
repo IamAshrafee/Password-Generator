@@ -18,6 +18,7 @@ Body {
 
 .container{
   display: flex;
+  flex-direction: column;
 }
 
 .title-container {
