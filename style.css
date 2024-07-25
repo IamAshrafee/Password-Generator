@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /* default colores */
+  --Dark_Background: #171a1d;
+  --Heading_text_color: #ffffff;
+  --Description_Text_Color: #ffffffb9;
+  --Description_Font_Weight: 400;
+  --element_Text_Clr: #e0e0e0;
+  --Card_background-color: #1a1d20;
+  --fieldset_container_border: 2px solid #5a5a5a;
+  --toggle_background-color: #555;
+  --toggle_checked_background-color: #9900ff;
+  --toggle_ball_color: #ffff;
+  /* border radius */
+  --border_radius: 10px;
+}
+
+body {
+  margin: 10px 150px;
+}
+
+/* universal CSS class */
+/* ================================== */
+/* margin 5px */
+.mar5 {
+  margin: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif !important;
+}
+
+Body {
+  background-color: var(--Dark_Background);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+}
+
+.title-texts {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.heading {
+  color: var(--Heading_text_color);
+  margin-top: 25px;
+}
+
+.heading-para {
+  color: var(--Description_Text_Color);
+  width: 1000px;
+  font-weight: var(--Description_Font_Weight);
+  margin-bottom: 40px;
+}
+
+
+.left-container {
+  width: 480px;
+}
+
+.middle-container {}
+
+.right-container {}
+
+.password-length-card-container fieldset {
+  height: 75px;
+}
+
+.card-container {}
+
+/* All card universal codes  */
+.card {
+  color: var(--element_Text_Clr);
+  background-color: var(--Card_background-color);
+  border-radius: var(--border_radius);
+  padding: 15px;
+  margin: 17px 0px 17px 0px;
+  box-shadow: 0px 0px 20px -8px black;
+}
+
+/* All fieldset container code  */
+.fieldset-container legend {
+  font-size: 20px;
+  color: var(--Heading_text_color);
+  padding: 0px 7px;
+}
+
+.fieldset-container {
+  border-radius: var(--border_radius);
+  padding: 0px 15px;
+  border: var(--fieldset_container_border);
+  position: relative;
+}
+
+/* All toggle button CSS code  */
+.option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.option label {
+  font-size: 16px;
+}
+
+/* Styles for toggle switches */
+.toggle {
+  appearance: none;
+  width: 40px;
+  height: 22px;
+  background-color: var(--toggle_background-color);
+  border-radius: var(--border_radius);
+  position: relative;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Styles for the slider */
+.toggle:checked {
+  background-color: var(--toggle_checked_background-color);
+  transition: 0.3s;
+}
+
+.toggle:before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: var(--toggle_ball_color);
+  border-radius: 200px;
+  top: 3px;
+  left: 3.2px;
+  transition: 0.3s;
+  box-shadow: 1px 0px 6px black;
+}
+
+.toggle:checked:before {
+  transform: translateX(17px);
+  box-shadow: -1px 0px 10px black;
+}
