@@ -14,6 +14,8 @@
   --toggle_ball_color: #ffff;
   /* border radius */
   --border_radius: 10px;
+  /* Box shadow  */
+  --card_box_shadow: 0px 0px 20px -8px black;
 }
 
 body {
@@ -66,20 +68,77 @@ Body {
   margin-bottom: 40px;
 }
 
-
 .left-container {
   width: 480px;
 }
 
-.middle-container {}
-
-.right-container {}
-
-.password-length-card-container fieldset {
-  height: 75px;
+.middle-container {
 }
 
-.card-container {}
+.right-container {
+}
+
+.password-length-card-container fieldset {
+}
+.slider-box {
+  display: flex;
+  align-items: center;
+  /* padding: 17px 20px 20px 20px; */
+  margin-bottom: 12px;
+  margin-left: 20px;
+  justify-content: space-between;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  width: 320px;
+  height: 100%;
+}
+
+.slider input {
+  height: 12px;
+  width: 100%;
+  appearance: none;
+  border-radius: 25px;
+  background-color: #ededed;
+  box-shadow: 0 0 0 2px var(--Card_background-color);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.slider input::-webkit-slider-thumb {
+  appearance: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: var(--toggle_checked_background-color);
+  box-shadow: -208px 0 0 200px var(--toggle_checked_background-color);
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  text-align: center;
+  font-size: 16px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.slider-value {
+  outline: none;
+  color: white;
+  width: 26px;
+  padding: 10px;
+  background-color: var(--Dark_Background);
+  box-shadow: var(--card_box_shadow);
+}
+
+.card-container {
+}
 
 /* All card universal codes  */
 .card {
@@ -88,7 +147,7 @@ Body {
   border-radius: var(--border_radius);
   padding: 15px;
   margin: 17px 0px 17px 0px;
-  box-shadow: 0px 0px 20px -8px black;
+  box-shadow: var(--card_box_shadow);
 }
 
 /* All fieldset container code  */
@@ -136,7 +195,7 @@ Body {
 }
 
 .toggle:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 16px;
   height: 16px;

@@ -1,90 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password Generator</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Password Generator</title>
-</head>
-
-<body>
-  <div class="container">
-    <!-- Title container start here  -->
-    <div class="title-container">
-      <div class="title-texts">
-        <!-- Heading -->
-        <h1 class="heading mar5">
-          Password Factory - Free Random Password Generator
-        </h1>
-        <!-- Header Description -->
-        <p class="heading-para mar5">
-          This random password generator is a simple yet powerful tool that
-          helps you create strong, secure passwords for your online accounts,
-          ensuring that your personal and professional data is protected from
-          unauthorized access.
-        </p>
-      </div>
-    </div>
-    <!-- title container end here  -->
-    <!-- Tools container start here  -->
-    <div class="tools-container">
-      <!-- left container start here  -->
-      <div class="left-container">
-        <div class="password-length-card-container card-container">
-          <div class="card">
-            <fieldset class="fieldset-container">
-              <legend>Length</legend>
-            </fieldset>
-          </div>
-        </div>
-        <div class="includes-card-container card-container">
-          <div class="card">
-            <fieldset class="fieldset-container">
-              <legend>Includes</legend>
-              <div class="option">
-                <label for="numbers">Include Numbers ?</label>
-                <!-- this is an option, when someone will enable it, it will inlucde numbers in the generated passowrd. 
-                Or if it disabled, it wouldn't include any numbers in the process of generating password. -->
-                <input type="checkbox" id="numbers" class="toggle" />
-              </div>
-              <div class="option">
-                <label for="uppercase">Include Uppercase ?</label>
-                <!-- this is an option, when someone will enable it, it will inlucde Uppercase letters in the generated passowrd. 
-                Or if it disabled, it wouldn't include any uppercase letters in the process of generating password. -->
-                <input type="checkbox" id="uppercase" class="toggle" />
-              </div>
-              <div class="option">
-                <label for="lowercase">Include Lowercase ?</label>
-                <!-- this is an option, when someone will enable it, it will inlucde lowercase letters in the generated passowrd. 
-                Or if it disabled, it wouldn't include any lowercase letters in the process of generating password. -->
-                <input type="checkbox" id="lowercase" class="toggle" />
-              </div>
-              <div class="option">
-                <label for="symbols">Include Special Symbols ?</label>
-                <!-- this is an option, when someone will enable it, it will inlucde spcial symbols in the generated passowrd. 
-                Or if it disabled, it wouldn't include any special symbols in the process of generating password. -->
-                <input type="checkbox" id="symbols" class="toggle" />
-              </div>
-            </fieldset>
-          </div>
+  <body>
+    <div class="container">
+      <!-- Title container start here  -->
+      <div class="title-container">
+        <div class="title-texts">
+          <!-- Heading -->
+          <h1 class="heading mar5">
+            Password Factory - Free Random Password Generator
+          </h1>
+          <!-- Header Description -->
+          <p class="heading-para mar5">
+            This random password generator is a simple yet powerful tool that
+            helps you create strong, secure passwords for your online accounts,
+            ensuring that your personal and professional data is protected from
+            unauthorized access.
+          </p>
         </div>
       </div>
-      <!-- left container end here  -->
-      <!-- middle container start here -->
-      <div class="middle-container"></div>
-      <!-- middle container end here  -->
-      <!-- right container start here  -->
-      <div class="right-container"></div>
-      <!-- right container end here  -->
+      <!-- title container end here  -->
+      <!-- Tools container start here  -->
+      <div class="tools-container">
+        <!-- left container start here  -->
+        <div class="left-container">
+          <div class="password-length-card-container card-container">
+            <div class="card">
+              <fieldset class="fieldset-container">
+                <legend>Length</legend>
+                <div class="slider-box">
+                  <div class="slider">
+                    <!-- this is a password length slider-->
+                    <input
+                      type="range"
+                      id="password-lenght"
+                      min="1"
+                      max="25"
+                      value="8"
+                    />
+                  </div>
+                  <input
+                    class="slider-value"
+                    type="number"
+                    id="password-lenght-value"
+                    min="1"
+                    max="25"
+                    value="8"
+                    readonly
+                  />
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="includes-card-container card-container">
+            <div class="card">
+              <fieldset class="fieldset-container">
+                <legend>Includes</legend>
+                <div class="option">
+                  <label for="include-numbers">Include Numbers ?</label>
+                  <!-- this is an option, when someone will enable it, it will include numbers in the generated password. 
+                Or if it disabled, it wouldn't include any numbers in the process of generating password.
+                By default, it will be enabled (turn on). -->
+                  <input type="checkbox" id="include-numbers" class="toggle" />
+                </div>
+                <div class="option">
+                  <label for="include-uppercase">Include Uppercase ?</label>
+                  <!-- this is an option, when someone will enable it, it will include Uppercase letters in the generated password. 
+                Or if it disabled, it wouldn't include any uppercase letters in the process of generating password.
+                By default, it will be enabled (turn on). -->
+                  <input
+                    type="checkbox"
+                    id="include-uppercase"
+                    class="toggle"
+                  />
+                </div>
+                <div class="option">
+                  <label for="include-lowercase">Include Lowercase ?</label>
+                  <!-- this is an option, when someone will enable it, it will include lowercase letters in the generated password. 
+                Or if it disabled, it wouldn't include any lowercase letters in the process of generating password.
+                By default, it will be enabled (turn on). -->
+                  <input
+                    type="checkbox"
+                    id="include-lowercase"
+                    class="toggle"
+                  />
+                </div>
+                <div class="option">
+                  <label for="include-symbols">Include Special Symbols ?</label>
+                  <!-- this is an option, when someone will enable it, it will include special symbols in the generated password. 
+                Or if it disabled, it wouldn't include any special symbols in the process of generating password.
+                By default, it will be enabled (turn on). -->
+                  <input type="checkbox" id="include-symbols" class="toggle" />
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="excludes-card-container card-container">
+            <div class="card">
+              <fieldset class="fieldset-container">
+                <legend>Excludes</legend>
+                <div class="option">
+                  <label for="similar-characters">No Similar Characters </label>
+                  <!-- this is an option, when someone will enable it, it will not use any similar characters (for example:i,l,1,L,o,O,0,etc) in the generated password. 
+                Or if it disabled, it can use similar characters (for example:i,l,1,L,o,O,0,etc) in the process of generating password.
+                By default, it will be enabled (turn on). -->
+                  <input
+                    type="checkbox"
+                    id="similar-characters"
+                    class="toggle"
+                  />
+                </div>
+                <div class="option">
+                  <label for="duplicate-characters"
+                    >No Duplicate Characters</label
+                  >
+                  <!-- this is an option, when someone will enable it, it won't use the same character more than once in the generated password. 
+                Or if it disabled, It can use the same character more than once in the process of generating password.
+                 By default, it will be disabled (turn off).-->
+                  <input
+                    type="checkbox"
+                    id="duplicate-characters"
+                    class="toggle"
+                  />
+                </div>
+                <div class="option">
+                  <label for="sequential-characters"
+                    >No Sequential Characters</label
+                  >
+                  <!-- this is an option, when someone will enable it, it will not use sequential characters (for example: abc, 123 etc) in the generated password. 
+                Or if it disabled, it can use sequential characters in the process of generating password.
+                By default, it will be enabled (turn on). -->
+                  <input
+                    type="checkbox"
+                    id="sequential-characters"
+                    class="toggle"
+                  />
+                </div>
+                <div class="option">
+                  <label for="ambiguous-characters"
+                    >No Ambiguous Characters</label
+                  >
+                  <!-- this is an option, when someone will enable it, it will not use ambiguous characters (for example: ;;, <>, '', /\, {}, [], ~, etc) in the generated password. 
+                Or if it disabled, it can use ambiguous characters in the process of generating password.
+                 By default, it will be enabled (turn on).-->
+                  <input
+                    type="checkbox"
+                    id="ambiguous-characters"
+                    class="toggle"
+                  />
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+        <!-- left container end here  -->
+        <!-- middle container start here -->
+        <div class="middle-container"></div>
+        <!-- middle container end here  -->
+        <!-- right container start here  -->
+        <div class="right-container"></div>
+        <!-- right container end here  -->
+      </div>
+      <!-- tools container end here  -->
     </div>
-    <!-- tools container end here  -->
-  </div>
-</body>
-
+  </body>
 </html>
