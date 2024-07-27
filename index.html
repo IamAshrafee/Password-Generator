@@ -9,6 +9,17 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Password Generator</title>
   </head>
@@ -167,10 +178,47 @@
         </div>
         <!-- left container end here  -->
         <!-- middle container start here -->
-        <div class="middle-container"></div>
+        <div class="middle-container">
+          <div class="password-output-card-container card-container">
+            <div class="card">
+              <fieldset class="fieldset-container">
+                <legend>Generated Password</legend>
+                <div class="output-box">
+                  <input
+                    type="text"
+                    id="generated-password"
+                    spellcheck="false"
+                  />
+                  <button class="shuffle-button mar5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="30px"
+                      viewBox="0 -960 960 960"
+                      class="shuffle-button-svg"
+                      width="30px"
+                      fill="#e8eaed"
+                    >
+                      <path
+                        d="M570.67-160v-66.67h114.66L527-384.33 574-432l159.33 158v-114.67H800V-160H570.67Zm-364 0L160-207.33l526.67-526h-116V-800H800v228.67h-66.67V-686L206.67-160Zm179-367.67L160-752.67 207.33-800 433-575l-47.33 47.33Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
         <!-- middle container end here  -->
         <!-- right container start here  -->
-        <div class="right-container"></div>
+        <div class="right-container">
+          <div class="password-output-card-container card-container">
+            <div class="card">
+              <fieldset class="fieldset-container">
+                <legend>Generated Password</legend>
+              </fieldset>
+            </div>
+          </div>
+        </div>
         <!-- right container end here  -->
       </div>
       <!-- tools container end here  -->
