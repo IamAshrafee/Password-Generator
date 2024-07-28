@@ -30,7 +30,7 @@ includeSymbolsCheckbox.checked = true;
 excludeSimilarCheckbox.checked = true;
 excludeDuplicateCheckbox.checked = false;
 excludeSequentialCheckbox.checked = true;
-excludeAmbiguousCheckbox.checked = true;
+excludeAmbiguousCheckbox.checked = false;
 
 // Update slider value display
 passwordLengthSlider.addEventListener('input', () => {
