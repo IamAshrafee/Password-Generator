@@ -321,3 +321,14 @@ input[type="number"]::-webkit-inner-spin-button {
   transform: translateX(17px);
   box-shadow: -1px 0px 10px black;
 }
+
+.footer-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.footer-container p {
+ color: var(--Description_Text_Color);
+}
