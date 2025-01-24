@@ -11,9 +11,14 @@
 
 <div align="center">
   <h1>Let's take a look...</h1>
+  <p>Desktop and mobile view</p>
 </div>
 
-![image](https://github.com/user-attachments/assets/8088bc9e-9e12-4912-9ba0-42ea852585c4)
+
+<img src="https://github.com/user-attachments/assets/8088bc9e-9e12-4912-9ba0-42ea852585c4" alt="Desktop View" width="760" height="auto">
+
+<img src="https://github.com/user-attachments/assets/9f56f6c0-1d27-4cfc-bcc5-79683d80a273" alt="Sample Image" width="240" height="auto">
+
 
 ## Features
 
