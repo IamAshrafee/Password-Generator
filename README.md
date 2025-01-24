@@ -17,6 +17,10 @@
 
 <img src="https://github.com/user-attachments/assets/8088bc9e-9e12-4912-9ba0-42ea852585c4" >
 
+<div align="center">
+  <p>Mobile view</p>
+</div>
+
 <img src="https://github.com/user-attachments/assets/9f56f6c0-1d27-4cfc-bcc5-79683d80a273" >
 
 
