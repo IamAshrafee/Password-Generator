@@ -1,0 +1,37 @@
+@media (max-width: 600px) {
+    .tools-container {
+        flex-direction: column-reverse;
+    }
+
+    .middle-container {
+        width: 100%;
+    }
+
+    .button-text {
+        margin-right: 0px;
+        padding: 0px 4px 0x 3px;
+    }
+
+    .left-container {
+        width: 100%;
+    }
+
+    .d-hidden-2 {
+        display: block;
+    }
+
+    .d-hidden-1 {
+        display: none;
+    }
+
+    h1 {
+        font-size: 28px;
+        max-width: 322px;
+    }
+
+    .title-container {
+        display: flex;
+        justify-content: center;
+        margin: 25px 10px 00px 10px;
+    }
+
