@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Free Pass Generator</h1>
+  <h1>Free Password Generator</h1>
 </div>
 <div align="center">
   <p>This is a Random Password Generator, It's completely free....</p>
