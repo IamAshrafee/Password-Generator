@@ -9,7 +9,8 @@
 
     .button-text {
         margin-right: 0px;
-        padding: 0px 4px 0x 3px;
+        padding: 0px 4px 0x 3px !important;
+        width: max-content;
     }
 
     .left-container {
@@ -35,3 +36,27 @@
         margin: 25px 10px 00px 10px;
     }
 
+    .heading-para {
+        line-height: 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 450px) {
+    .d-none-450px {
+        display: none;
+    }
+
+    .media-450px svg {
+        border: none;
+        padding: 0px 25px;
+    }
+
+    .button-svg {
+        padding: 0px 14px;
+    }
+
+    .button-text {
+        padding: 0px 8px;
+    }
+}
